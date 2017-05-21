@@ -1,0 +1,175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif;
+  font-size: 12.5px;
+  line-height: 30px;
+	letter-spacing: 0.6em;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+  /* Nachfolgend Font Smooth Styling für die optimierte Darstellung in Firefox */
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: @import url('https://fonts.googleapis.com/css?family=Roboto:500,700');
+}
+
+/* Link Styling Reset */
+
+a {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+/* Ab hier Styles der Seitenelemente */
+body {
+	background: url(assets/bg2.jpg) no-repeat center center fixed;
+	background-size: cover;
+	user-select: none;
+	cursor: default !important;
+	transition: all 0.3s ease-in-out;
+}
+a {
+	cursor: default !important;
+}
+header {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+}
+#logo {
+  width: 431px;
+  height: 69px;
+  background-color: transparent;
+  background-image: url(assets/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+	bottom: 28vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav {
+	position: relative;
+	bottom: 21.5vh;
+}
+button {
+	width: 219px;
+  height: 54px;
+	background-color: transparent;
+	background-image: url(assets/button.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	bottom: 15vh;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+  font-size: 12.5px;
+  line-height: 30px;
+	letter-spacing: 0.6em;
+	font-weight: 700;
+	padding-left: 12px;
+	z-index: 999;
+	transition: all 0.3s ease-in-out;
+}
+button:hover {
+	background-image: url(assets/button_hover.svg);
+	color: #d60000;
+}
+footer {
+	width: calc(100% - 180px);
+	position: absolute;
+	bottom: 0;
+	padding: 0 0 120px 110px;
+}
+#copyright {
+	font-size: 10px;
+	letter-spacing: 0.15em;
+	color: #d60000;
+	opacity: 0.6;
+	position: absolute;
+}
+#signature {
+  width: 164px;
+  height: 65px;
+  background-color: transparent;
+  background-image: url(assets/signature.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+	position: absolute;
+	right: 0;
+	opacity: 0.6;
+}
+
+@media (max-height: 545px) {
+	footer {
+		padding: 0 0 22vh 110px;
+	}
+}
+
+@media (max-width: 600px) {
+	#logo {
+	  width: 251px;
+	  height: 40px;
+		background-size: cover;
+	}
+	footer {
+		width: 100%;
+		padding: 0 0 0 0;
+		height: 0;
+	}
+	#copyright {
+  	position: relative;
+		margin: 0 auto;
+		padding-bottom: 30px;
+  }
+	#signature {
+		position: relative;
+		margin: 0 auto;
+}
